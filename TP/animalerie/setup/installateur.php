@@ -1,5 +1,5 @@
 <?php 
-    require_once('../AnimauxManager.php');
+    require_once('../main-class/AnimauxManager.php');
 
     define( 'DB_NAME', 'grp-385_s3_progweb' ); //db name
     define( 'DB_USER', 'grp-385' );//login bdd

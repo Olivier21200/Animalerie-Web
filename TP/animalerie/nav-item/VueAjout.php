@@ -34,8 +34,7 @@
                         <li class="nav-item"><a class="nav-link" href="VueAjout.php">Ajout</a></li>
                         <li class="nav-item"><a class="nav-link" href="VueSupprimer.php">Supprimer</a></li>
                         <li class="nav-item"><a class="nav-link" href="VueRecherche.php">Recherche</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../modifier.php">Modifier</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../vueAnimal.php">Liste</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Vuemodifier.php">Modifier</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,8 +45,8 @@
             <div class="masthead-content">
                 <div class="container px-5">
                     <h1 class="masthead-heading mb-0">Gestion de l'animalerie</h1>
-                    <h2 class="masthead-subheading mb-0">Tp N°3 Prog-Web PHP</h2>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Tp n°3 M3104 - Programmation web -></a>
+                    <h2 class="masthead-subheading mb-0">Tp n°3 à n°6 Prog-Web PHP</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">M3104 - Programmation web -></a>
                 </div>
             </div>
 
@@ -63,7 +62,7 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Ajouter un animal</h2>
-                                <?php ajoutPage(); ?>           
+                                <?php ajoutPage(); //génération du formulaire d'ajout?>           
                         </div>
                     </div>
                 </div>
@@ -72,7 +71,7 @@
 
         <!-- Footer-->
         <footer class="py-5 bg-black">
-            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Olivier Sirugue - S3B1 | Lundi 11 decembre 2021</p></div>
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Olivier Sirugue - S3B1 | Jeudi 05 janvier 2022</p></div>
         </footer>
         
         <!-- Bootstrap core JS-->
@@ -82,6 +81,3 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
-
-
-

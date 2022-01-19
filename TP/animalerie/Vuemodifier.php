@@ -1,4 +1,4 @@
-<?php require_once('modifier2.php');?>
+<?php  session_start(); //Création d'une sesion pour stocker l'id de l'animal?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,15 +20,14 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark navbar-custom navbar-scrolled">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="#page-top">Menu navigation</a>
+                    <a class="navbar-brand" href="index.php">Accueil</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="nav-item/ajout.php">Ajout</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nav-item/supprimer.php">Supprimer</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nav-item/recherche.php">Recherche</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nav-item/Vueajout.php">Ajout</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nav-item/Vuesupprimer.php">Supprimer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nav-item/Vuerecherche.php">Recherche</a></li>
                         <li class="nav-item"><a class="nav-link" href="VueModifier.php">Modifier</a></li>
-                        <li class="nav-item"><a class="nav-link" href="vueAnimal.php">Liste</a></li>
                         
                         </ul>
                     </div>
@@ -40,7 +39,7 @@
                 <div class="masthead-content">
                     <div class="container px-5">
                         <h1 class="masthead-heading mb-0">Gestion de l'animalerie</h1>
-                        <h2 class="masthead-subheading mb-0">Tp N°3 Prog-Web PHP</h2>
+                        <h2 class="masthead-subheading mb-0">Tp n°3 à n°6</h2>
                         <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Let's go -></a>
                     </div>
                 </div>
@@ -53,16 +52,28 @@
                         
                         <div class="col-lg-8 order-lg-1">
                             <div class="p-5">
-                                <h2 class="display-4">Réalisation du tp n°3</h2>
+                                <h2 class="display-4">Modifier les animaux</h2>
                                 <p><?php
                                     include "VueAnimal.php"; 
-                                    modifierPage();
+									//require_once('modifier2.php');
+                                     include "modifier2.php";
                                   ?></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+             <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Olivier Sirugue - S3B1 | Jeudi 05 janvier 2022</p></div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
         
            
 </body>

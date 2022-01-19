@@ -1,12 +1,11 @@
 <?php
+
+    //link de fichier php
     require_once("main-class/Animal.php");
     require_once("main-class/AnimauxManager.php");
- 
     include ("Liste_Animaux.php");
 
-    //getList   
-    //$res2 = $manager->getList();
-
+    //On affiche sous la forme d'un tableau la listes des differants animaux dans notre bdd avec leus differants informations
     echo("
 
     <table class=\"table table-hover\"> 
@@ -25,7 +24,6 @@
         
         foreach ($res2 as $val) 
         {
-            //echo $val->__toString();
             echo("<tbody> <tr>
             
             <td>".$val->id()."</td>
@@ -34,7 +32,7 @@
             <td>".$val->cri()."</td> 
             <td>".$val->Proprietaire()."</td> 
             <td>".$val->age()."</td>  
-            <td>  <a href=\"modifier.php?id=".$val->id()."\">modifier </a>  "."</td>  
+            <td>  <a href=\"VueModifier.php?id=".$val->id()."\">modifier </a>  "."</td>  
             <td>  <a href=\"nav-item/VueSupprimer.php?id=".$val->id()."\">supprimer </a>  "." </td>
             </tr> </tbody>");
         } 
