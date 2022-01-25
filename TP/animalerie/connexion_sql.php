@@ -2,10 +2,10 @@
     require_once("main-class/AnimauxManager.php");
 
      //Variable de link avec la bdd
-     $host = 'localhost';
-     $dbname = 'grp-385_s3_progweb';
-     $username = 'grp-385';
-     $password = 'LcCEnEEy';
+     $host = '';
+     $dbname = '';
+     $username = '';
+     $password = '';
   
      try //test de conection a la bdd
      {
